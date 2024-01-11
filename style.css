@@ -189,10 +189,16 @@ nav {
 }
 
 .bottomsearch form {
+    background-color: #F0F0F4;
     height: 50px;
     display: flex;
     position: relative;
     justify-content: space-between;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+.bottomsearch {
+    
 }
 
 .inpsearch {
@@ -358,7 +364,7 @@ form .submit {
     width: 24px;
     height: 24px;
     position: absolute;
-    left: 225px;
+    right: 15px;
     top: 15px;
 
 }
@@ -393,7 +399,7 @@ form .submit {
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 203px;
+    right: 0px;
     bottom: 0px;
 }
 
@@ -677,6 +683,10 @@ footer {
 .topheader .menu__btn {
     display: none;
 }
+.lupa {
+    width: 23px;
+    display: none;
+}
 
 @media(max-width: 420px) {
     .topnav {
@@ -706,10 +716,13 @@ footer {
     nav {
         overflow-x: auto;
         gap: 10px;
+        margin-top: 0px;
+        background-color: #FFF;
     }
 
     .promotions {
         flex-direction: column;
+        margin-top: 5vh;
     }
     .promotions img:last-child {
         width: 80%;
@@ -724,11 +737,34 @@ footer {
     .topsearch div {
         flex: 1 0 230px;
     }
-
+    .submit {
+        display: none;
+    }
+    .lupa {
+        display: block;
+    }
     .bottomsearch {}
 
-
-
+    .kategorii {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .populartovars .toppop h2 {
+        text-align: center;
+    }
+    .populartovars .toppop .categpop {
+        overflow-x: auto;   
+        width: 100%;
+        height: 7vh;
+        display: flex; 
+        align-items: center;
+    }
+    .sliderpop {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
 }
 
 
